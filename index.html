@@ -65,8 +65,7 @@
     </nav>
   </header>
 
-  <main class="conteudo">
-
+  <main class="conteudo" role="main">
     <section class="secaoDestaque">
       <h1 class="secaoDestaque-titulo" id="conteudoPrincipal">
         APLICATIVOS NA MEDIDA
@@ -278,21 +277,21 @@
         <h2 class="secaoDestaques-titulo tituloPadrao">DESTAQUES</h2>
 
         <a href="http://blog.apeperia.com.br/design/conheca-primeiras-etapas-criacao-logotipo-teste-teste" class="secaoDestaques-link">
-          <div class="secaoDestaques-destaque">
+          <figure class="secaoDestaques-destaque">
             <img src="img/comecando-criar-logotipo.png" class="secaoDestaques-destaque-img" alt="Ferramentas de designer. Ilustração">
-            <p class="secaoDestaques-destaque-titulo"  id="tituloDestaque1">
+            <figcaption class="secaoDestaques-destaque-titulo"  id="tituloDestaque1">
               Conheça as primeiras etapas na criação de um logotipo
-            </p>
-          </div>
+            </figcaption>
+          </figure>
         </a>
 
         <a href="http://blog.apeperia.com.br/design/dicas-como-fotografar-com-celular" class="secaoDestaques-link">
-          <div class="secaoDestaques-destaque">
+          <figure class="secaoDestaques-destaque">
             <img src="img/dicas-fotografia.png" class="secaoDestaques-destaque-img" alt="Moça mostrando câmera para rapaz">
-            <p class="secaoDestaques-destaque-titulo"  id="tituloDestaque2">
+            <figcaption class="secaoDestaques-destaque-titulo"  id="tituloDestaque2">
               Veja dicas de como fotografar usando seu celular
-            </p>
-          </div>
+            </figcaption>
+          </figure>
         </a>
 
         <button class="secaoDestaques-form-botao btnPadrao btnPadrao--pequeno" id="abreDialog">
@@ -339,21 +338,21 @@
           </p>
 
           <div class="contatoCampo contatoCampo--sucesso">
-            <label>Nome: </label>
-            <input type="text" class="contatoCampo--validouFoi" value="Natan Souza" required>
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" class="contatoCampo--validouFoi" placeholder="Nome" required>
           </div>  
 
           <div class="contatoCampo contatoCampo--erro">
-            <label>Email: </label>
-            <input type="email" class="contatoCampo--validouErro" required>
+            <label for="email">Email: </label>
+            <input type="email" id="email" class="contatoCampo--validouErro" placeholder="Email..." required>
             <span class="contatoCampo-msg contatoCampo-msg--erro">
               Você quis dizer <a href="#">gmail.com?</a>
             </span>
           </div>
 
           <div class="contatoCampo contatoCampo--erro">
-            <label>Telefone: </label>
-            <input type="text" class="contatoCampo--validouErro" placeholder="(11) 5571-2751">
+            <label for="telefone">Telefone: </label>
+            <input type="text" id="telefone" class="contatoCampo--validouErro" placeholder="(11) 5571-2751">
             <span class="contatoCampo-msg contatoCampo-msg--erro">Faltou o DDD</span>
           </div>     
 
@@ -364,22 +363,22 @@
 
           <div class="contatoCampo">
             <label>Endereço: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Rua Vergueiro">
+            <input type="text" class="contatoCampo-campoDesabilitado" readonly value="Rua Vergueiro">
           </div>   
 
           <div class="contatoCampo">
             <label>Bairro: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Vila Mariana">
+            <input type="text" class="contatoCampo-campoDesabilitado" readonly value="Vila Mariana">
           </div>   
 
           <div class="contatoCampo">
             <label>Cidade: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="São Paulo">
+            <input type="text" class="contatoCampo-campoDesabilitado" readonly value="São Paulo">
           </div>   
 
           <div class="contatoCampo">
             <label>Estado: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="SP">
+            <input type="text" class="contatoCampo-campoDesabilitado" readonly value="SP">
           </div>   
 
           <div class="contatoCampo">
